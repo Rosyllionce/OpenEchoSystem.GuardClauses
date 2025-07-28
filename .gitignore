@@ -416,3 +416,14 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+
+**/desktop.ini
+
+research/
+temp_doc_gen/
+docs/api/
+docs/api_raw/
+docs/_site
+docs/PRD*
+docs/reports/

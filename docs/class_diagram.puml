@@ -1,0 +1,60 @@
+@startuml
+skinparam handwritten true
+skinparam classAttributeIconSize 0
+
+title C# Guard Clause Library - Core Class Diagram
+
+interface IGuardClause {
+}
+
+class Guard << (S,Aquamarine) Static >> {
+    + {static} IGuardClause Against { get; }
+}
+
+class GuardClause << (I,Orange) Internal >> {
+    - GuardClause()
+}
+
+' Extension Method Classes
+' These static classes contain extension methods that extend IGuardClause
+class ObjectGuard << (S,Aquamarine) Static >> {
+    + {static} Null<T>(IGuardClause guard, T input, [CallerArgumentExpression] string paramName = null)
+    + {static} NotNull<T>(IGuardClause guard, T input, [CallerArgumentExpression] string paramName = null)
+    ' ... other object-related extension methods
+}
+
+class StringGuard << (S,Aquamarine) Static >> {
+    + {static} NullOrEmpty(IGuardClause guard, string input, [CallerArgumentExpression] string paramName = null)
+    + {static} NullOrWhiteSpace(IGuardClause guard, string input, [CallerArgumentExpression] string paramName = null)
+    ' ... other string-related extension methods
+}
+
+class NumericGuard << (S,Aquamarine) Static >> {
+    + {static} Zero<T>(IGuardClause guard, T input, [CallerArgumentExpression] string paramName = null)
+    + {static} Negative<T>(IGuardClause guard, T input, [CallerArgumentExpression] string paramName = null)
+    + {static} OutOfRange<T>(IGuardClause guard, T input, T rangeFrom, T rangeTo, [CallerArgumentExpression] string paramName = null)
+    ' ... other numeric-related extension methods
+}
+
+class GuidGuard << (S,Aquamarine) Static >> {
+    + {static} Empty(IGuardClause guard, Guid input, [CallerArgumentExpression] string paramName = null)
+    ' ... other guid-related extension methods
+}
+
+class EnumGuard << (S,Aquardine) Static >> {
+    + {static} OutOfRange<T>(IGuardClause guard, T input, [CallerArgumentExpression] string paramName = null)
+    ' ... other enum-related extension methods
+}
+
+' Relationships
+GuardClause .up.|> IGuardClause
+Guard .right.> IGuardClause : "returns Against"
+Guard .right.> GuardClause : "instantiates (internal)"
+
+IGuardClause <.. ObjectGuard
+IGuardClause <.. StringGuard
+IGuardClause <.. NumericGuard
+IGuardClause <.. GuidGuard
+IGuardClause <.. EnumGuard
+
+@enduml
