@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IsPackable>true</IsPackable>
+    <PackageId>OpenEchoSystem.GuardClauses</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>OpenEchoSystem</Authors>
+    <Company>OpenEchoSystem</Company>
+    <PackageDescription>A modern, lightweight, and extensible guard clause library for .NET.</PackageDescription>
+    <RepositoryUrl>https://github.com/Rosyllionce/OpenEchoSystem.GuardClauses</RepositoryUrl>
+    <PackageTags>guard, clauses, validation, argument, fluent, openEchoSystem</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Rosyllionce/OpenEchoSystem.GuardClauses</PackageProjectUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="OpenEchoSystem.GuardClauses.UnitTest" />
+  </ItemGroup>
+
+</Project>

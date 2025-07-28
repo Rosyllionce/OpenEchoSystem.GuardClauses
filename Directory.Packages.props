@@ -1,0 +1,7 @@
+<Project>
+  <ItemGroup>
+    <PackageVersion Include="coverlet.collector" Version="6.0.2" />
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+  <Import Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\.net\Framework.Packages.props" />
+</Project>
