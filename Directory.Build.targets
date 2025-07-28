@@ -1,0 +1,6 @@
+<Project >
+	<PropertyGroup>
+		<EnableExternalProjectPath>false</EnableExternalProjectPath>
+	</PropertyGroup>
+	<Import Condition="'$(EnableExternalProjectPath)' == 'true'" Project="$(MSBuildThisFileDirectory)..\..\..\..\..\..\.net\Framework.Build.targets" />
+</Project>

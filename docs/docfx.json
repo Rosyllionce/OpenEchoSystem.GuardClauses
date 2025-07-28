@@ -1,0 +1,57 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../src",
+          "files": [
+            "**/*.csproj"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**.yml"
+        ]
+      },
+      {
+        "files": [
+          "toc.yml",
+          "*.md"
+        ]
+      }
+    ],
+    "resource": [
+      "images/**"
+    ],
+    "output": "_site",
+    "globalMetadata": {
+      "_appTitle": "OpenEchoSystem.GuardClauses API Documentation"
+    },
+    "markdownEngineName": "markdig",
+    "markdownEngineProperties": {
+      "MarkdigExtensions": [
+        "PipeTables"
+      ]
+    },
+    "sitemap": {
+      "baseUrl": "https://example.com/docs",
+      "changefreq": "weekly",
+      "priority": 0.5
+    },
+    "xref": [
+      "https://learn.microsoft.com/dotnet/api/"
+    ],
+    "dest": "_site",
+    "template": [
+      "default"
+    ],
+    "exportRawModel": true,
+    "rawModelOutputFolder": "api_raw"
+  }
+}
