@@ -421,7 +421,9 @@ FodyWeavers.xsd
 **/desktop.ini
 
 research/
-docs/api/
-!docs/architecture
 temp_doc_gen/
-docs/
+docs/api/
+docs/api_raw/
+docs/_site
+docs/PRD*
+docs/reports/
