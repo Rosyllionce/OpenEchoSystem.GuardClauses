@@ -8,18 +8,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B89EBECE-21DC-4D09-BEDB-32E4A269B362}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
-		..\..\..\..\..\..\.net\Directory.Build.props = ..\..\..\..\..\..\.net\Directory.Build.props
 		Directory.Build.targets = Directory.Build.targets
-		..\..\..\..\..\..\.net\Directory.Build.targets = ..\..\..\..\..\..\.net\Directory.Build.targets
 		Directory.Packages.props = Directory.Packages.props
-		..\..\..\..\..\..\.net\Directory.Packages.props = ..\..\..\..\..\..\.net\Directory.Packages.props
-		..\..\..\..\..\..\.net\Framework.Build.props = ..\..\..\..\..\..\.net\Framework.Build.props
-		..\..\..\..\..\..\.net\Framework.Build.targets = ..\..\..\..\..\..\.net\Framework.Build.targets
-		..\..\..\..\..\..\.net\Framework.Packages.props = ..\..\..\..\..\..\.net\Framework.Packages.props
-		..\..\..\..\..\..\..\..\.net\Repo.Build.props = ..\..\..\..\..\..\..\..\.net\Repo.Build.props
-		..\..\..\..\..\..\..\..\.net\Repo.Build.targets = ..\..\..\..\..\..\..\..\.net\Repo.Build.targets
-		..\..\..\..\..\..\..\..\.net\Repo.Packages.props = ..\..\..\..\..\..\..\..\.net\Repo.Packages.props
-		..\..\..\..\..\..\..\..\.net\System.Build.props = ..\..\..\..\..\..\..\..\.net\System.Build.props
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenEchoSystem.GuardClauses", "src\OpenEchoSystem.GuardClauses.csproj", "{B2C5B15B-4EBA-DBFA-1B12-A92E713A775E}"
