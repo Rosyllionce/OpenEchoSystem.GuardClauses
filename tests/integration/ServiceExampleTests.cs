@@ -1,4 +1,3 @@
-using OpenEchoSystem.Guard;
 using System;
 using Xunit;
 
